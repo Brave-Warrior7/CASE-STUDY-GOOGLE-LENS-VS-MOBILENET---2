@@ -1,0 +1,113 @@
+<html>
+<head>
+   <title>CASE STUDY GOOGLE LENS VS MOBILENET </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="hexagon.jpg">
+    <center>
+        <h4 style="color:white; font-family: 'Oswald', sans-serif;">CASE STUDY BETWEEN GOOGLE LENS AND MOBILENT</h4>
+        <h4 style="color: white;"> Google Lens<img id="google-lens" src="R-removebg-preview.png"></h4>
+        <h4 style="color:rgb(255, 238, 0);font-weight: bold;">VS</h4>
+        <h4 class="btn btn-primary" style="font-weight: bold;">Mobilenet</h4>
+        <hr width="80%">
+        <div id="main_div">
+
+           <div id="div_1">
+              <br>
+             
+              <br>
+              <img id="waterbottle" src="waterbottle.jpg">
+              <br>
+              <br>
+           </div>
+
+           <div id="div_2">
+              <h4 id="h4main" >Output on <span style="color: rgb(255, 0, 0); font-weight: bold;">GOOGLE LENS - <span id="googlelens_result" style="color: purple;">waterbottle</span></span></h4>
+              <h4 id="h4mains" >Output on <span style="color: rgb(255, 0, 0); font-weight: bold;">MOBILENET - <span id="mobilenet_result" style="color: purple;">Waterbottle</span></span></h4>
+              <h4 style="color:rgb(0, 68, 255); font-weight: bold; margin-left: 200px;"> Result </h4>
+              <hr id="hr2">
+              <h4 style="color:rgb(0, 68, 255); font-weight: bold; margin-left: 200px;"> Draw </h4>
+              <h4 style="color:purple; font-weight: bold; margin-left: 200px;" id="main_result"></h4>
+            </div>
+
+            <div id="div_11">
+               <br>
+               <label id="label2"> 1. Test Image -</label>
+               
+               <img id="key" src="key1.jpg">
+               <br>
+               <br>
+            </div>
+ 
+            <div id="div_22">
+               <h4 id="h4main" >Output on <span style="color: rgb(255, 0, 0); font-weight: bold;">GOOGLE LENS - <span id="googlelens_result" style="color: purple;">Treasure Key</span></span></h4>
+               <h4 id="h4mains" >Output on <span style="color: rgb(255, 0, 0); font-weight: bold;">MOBILENET - <span id="mobilenet_result" style="color: purple;">Key</span></span></h4>
+               <h4 style="color:rgb(0, 68, 255); font-weight: bold; margin-left: 200px;"> Result</h4>
+               <hr id="hr2">
+               <h4 style="color:rgb(0, 68, 255); font-weight: bold; margin-left: 200px;"> Google lens is more accurate </h4>
+
+               <h4 style="color:purple; font-weight: bold; margin-left: 200px;" id="main_result"></h4>
+             </div>
+
+             <div id="div_111">
+               <br>
+               <label> 2. Test Image -</label>
+               <br>
+               <img id="shoes" src="shoes1.jpg">
+               <br>
+               <br>
+            </div>
+ 
+            <div id="div_222">
+               <h4 id="h4main" >Output on <span style="color: rgb(255, 0, 0); font-weight: bold;">GOOGLE LENS - <span id="googlelens_result" style="color: purple;">Adidas Shoes</span></span></h4>
+               <h4 id="h4mains" >Output on <span style="color: rgb(255, 0, 0); font-weight: bold;">MOBILENET - <span id="mobilenet_result" style="color: purple;">Shoes</span></span></h4>
+               <h4 style="color:rgb(0, 68, 255); font-weight: bold; margin-left: 200px;"> Result</h4>
+               <hr id="hr2">
+               <h4 style="color:rgb(0, 68, 255); font-weight: bold; margin-left: 200px;"> Google lens is more accurate </h4>
+
+               <h4 style="color:purple; font-weight: bold; margin-left: 200px;" id="main_result"></h4>
+             </div>
+
+             <div id="div_1111">
+               <br>
+               <label> 3. Test Image -</label>
+               <br>
+               <img id="soccer" src="soccer1.jpeg">
+               <br>
+               <br>
+            </div>
+ 
+            <div id="div_2222">
+               <h4 id="h4main" >Output on <span style="color: rgb(255, 0, 0); font-weight: bold;">GOOGLE LENS - <span id="googlelens_result" style="color: purple;">Soccerball</span></span></h4>
+               <h4 id="h4mains" >Output on <span style="color: rgb(255, 0, 0); font-weight: bold;">MOBILENET - <span id="mobilenet_result" style="color: purple;">Volleyball</span></span></h4>
+               <h4 style="color:rgb(0, 68, 255); font-weight: bold; margin-left: 200px;"> Result</h4>
+               <hr id="hr2">
+               <h4 style="color:rgb(0, 68, 255); font-weight: bold; margin-left: 200px;"> Google lens is more accurate </h4>
+
+               <h4 style="color:purple; font-weight: bold; margin-left: 200px;" id="main_result"></h4>
+             </div>
+
+             <div id="div_1111">
+               <br>
+               <label> 4. Test Image -</label>
+             
+            </div>
+            
+        </div>
+        <br><br>
+        <br>
+    </center>
+    <div id="footer">
+       Developed By- Nabil Islam Howlader
+    </div>
+
+</body>
+</html>
